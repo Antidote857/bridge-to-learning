@@ -1790,3 +1790,16 @@ RESPONSIVE
     font-size: 0.95rem;
   }
 }
+
+/* FIX TEXTAREA ICON ALIGNMENT */
+.textarea-group .input-icon {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  transform: none;
+}
+
+.textarea-group textarea {
+  padding-left: 46px;
+  padding-top: 18px;
+}
