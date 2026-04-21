@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Bridge-to-Learning</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYG0RNJXDR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YYG0RNJXDR');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <img src="logo1.png" alt="Bridge-to-Learning Logo">
+    <span>Bridge-to-Learning</span>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="profiles.html">Team</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- THANK YOU HERO -->
+<section class="thank-you-section fade-in">
+  <div class="container">
+    <div class="thank-you-card">
+
+      <div class="thank-you-icon">✅</div>
+      <span class="thank-you-tag">Message Received</span>
+
+      <h1>Thank You for Reaching Out</h1>
+
+      <p class="thank-you-text">
+        Your message has been successfully sent to Bridge-to-Learning.
+        We appreciate your interest and will get back to you within 24 hours.
+      </p>
+
+      <div class="thank-you-highlight">
+        <strong>What happens next?</strong>
+        <p>Our team will review your enquiry and respond with the most suitable guidance and support.</p>
+      </div>
+
+      <!-- ACTION BUTTONS -->
+      <div class="thank-you-actions">
+
+        <a href="services.html" class="btn">
+          Explore Our Services
+        </a>
+
+        <!-- ✅ TRACKED WHATSAPP CTA -->
+        <a href="https://wa.me/263772975546"
+           target="_blank"
+           class="btn thank-you-btn-secondary"
+           onclick="return trackWhatsAppClick(event, 'Thank You Page WhatsApp CTA')">
+           Chat on WhatsApp
+        </a>
+
+      </div>
+
+      <a href="index.html" class="back-home-link">← Return to Homepage</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING BUTTONS -->
+<a href="contact.html" class="sticky-btn">Contact</a>
+
+<!-- ✅ TRACKED FLOATING BUTTON -->
+<a href="https://wa.me/263772975546"
+   class="whatsapp-btn"
+   target="_blank"
+   onclick="return trackWhatsAppClick(event, 'Thank You Floating WhatsApp')">
+  💬 WhatsApp
+</a>
+
+<script src="script.js"></script>
+
+<!-- ✅ IMPROVED CONVERSION TRACKING -->
+<script>
+  if (typeof gtag === "function") {
+    gtag('event', 'generate_lead', {
+      event_category: 'Contact Form',
+      event_label: 'Thank You Page',
+      value: 1
+    });
+  }
+</script>
+
+</body>
+</html>
