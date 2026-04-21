@@ -359,10 +359,53 @@ FLOATING BUTTONS
 /* ======================
 MOBILE NAV
 ====================== */
+/* ======================
+MOBILE NAV
+====================== */
 .menu-toggle {
   display: none;
   font-size: 28px;
   cursor: pointer;
+  position: relative;
+  z-index: 2002;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    line-height: 1;
+    padding: 8px;
+  }
+
+  nav {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    background: var(--dark);
+    z-index: 2001;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 18px;
+  }
+
+  nav.show {
+    display: block;
+  }
 }
 
 /* ======================
