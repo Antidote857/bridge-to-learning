@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bridgetolearningeducation.co.za/sitemap.xml
+Sitemap: https://www.bridgetolearningeducation.co.za/sitemap.xml
